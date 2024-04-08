@@ -29,7 +29,7 @@ def predict(request_json, classifier, scaler):
     y_new_pred = classifier.predict(x_new_scale2)
     prediction = 'Yes' if y_new_pred[0] == 1 else 'No'
 
-    return "Is this person going to purchase this product? {}".format(prediction)
+    return "Is this person going to purchase this product? {} \n".format(prediction)
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -41,8 +41,8 @@ def upload_predict():
             pred = predict(json_data, classifier, scaler)
             # return render_template("index.html", prediction=pred)
             return pred, 200
-    # return render_template("index.html", prediction="Is this person going to purchase this product? ")
-    return "Is this person going to purchase this product? ", 200
+    # return render_template("index.html", prediction="Is this person going to purchase this product? \n")
+    return "Is this person going to purchase this product? \n", 200
 
 
 if __name__ == "__main__":
