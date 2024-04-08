@@ -1,6 +1,15 @@
+// True
 {
-    "male":0,
-    "age":49,
-    "salary":61000,
-    "price":2000
+    "male":1,
+    "age":54,
+    "salary":36000,
+    "price":5000
+} 
+
+// False
+{
+  "male":1,
+  "age":78,
+  "salary":10,
+  "price":200
 }
