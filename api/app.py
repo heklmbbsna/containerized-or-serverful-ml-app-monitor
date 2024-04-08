@@ -39,10 +39,10 @@ def upload_predict():
         if input_data:
             json_data = json.loads(input_data)
             pred = predict(json_data, classifier, scaler)
-            return render_template("index.html", prediction=pred)
-            # return pred, 200
-    return render_template("index.html", prediction="Is this person going to purchase this product? ")
-    # return "Is this person going to purchase this product? ", 200
+            # return render_template("index.html", prediction=pred)
+            return pred, 200
+    # return render_template("index.html", prediction="Is this person going to purchase this product? ")
+    return "Is this person going to purchase this product? ", 200
 
 
 if __name__ == "__main__":
