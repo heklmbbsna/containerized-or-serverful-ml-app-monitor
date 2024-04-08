@@ -8,7 +8,7 @@ services:
     container_name: flask-api
     image: example-flask-api
     ports:
-      - "5000:5000"
+      - "8080:8080"
     networks:
       example-network:
         ipv4_address: 172.16.238.10
