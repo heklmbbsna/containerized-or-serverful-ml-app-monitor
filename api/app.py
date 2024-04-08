@@ -35,10 +35,9 @@ def predict(request_json, classifier, scaler):
 @app.route("/", methods=["GET", "POST"])
 def upload_predict():
     if request.method == "POST":
-        input_data = request.files['input_data']
+        input_data = request.form['input_data']
         if input_data:
-            json_data = input_data.read()
-            json_data = json.loads(json_data)
+            json_data = json.loads(input_data)
             pred = predict(json_data, classifier, scaler)
             return render_template("index.html", prediction=pred)
     return render_template("index.html", prediction="Is this person going to purchase this product? ")
