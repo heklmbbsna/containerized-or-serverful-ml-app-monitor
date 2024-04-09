@@ -82,7 +82,7 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 7,
+        "h": 9,
         "w": 24,
         "x": 0,
         "y": 0
@@ -197,10 +197,10 @@
         ]
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 8,
         "x": 0,
-        "y": 7
+        "y": 9
       },
       "id": 4,
       "options": {
@@ -328,10 +328,10 @@
         ]
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 8,
         "x": 8,
-        "y": 7
+        "y": 9
       },
       "id": 2,
       "options": {
@@ -444,10 +444,10 @@
         ]
       },
       "gridPos": {
-        "h": 7,
+        "h": 8,
         "w": 8,
         "x": 16,
-        "y": 7
+        "y": 9
       },
       "id": 3,
       "options": {
@@ -498,6 +498,6 @@
   "timezone": "America/Vancouver",
   "title": "cmpt756-g15-serverful-ml-app",
   "uid": "cdi6cihgd3vnkb",
-  "version": 7,
+  "version": 8,
   "weekStart": ""
 }
