@@ -2,7 +2,7 @@
 
 while true; do
     for i in {1..10}; do
-        ./serverless.sh &
+        ./serverful.sh &
     done
     sleep 1
 done
