@@ -5,3 +5,4 @@ scikit-learn
 google-cloud-storage==1.25.0
 numpy
 flask
+prometheus-flask-exporter
