@@ -11,11 +11,14 @@ from flask import Flask
 from flask import request
 from flask import render_template
 
+from prometheus_flask_exporter import PrometheusMetrics
+
 
 classifier = pickle.load(open('./models/knn_model.pickle','rb'))
 scaler = StandardScaler()
 
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
 
 
 def predict(request_json, classifier, scaler):
