@@ -491,9 +491,13 @@
     "list": []
   },
   "time": {
-    "from": "now-5m",
+    "from": "now-3m",
     "to": "now"
   },
   "timepicker": {},
-  "timezone": "browser",
- 
+  "timezone": "America/Vancouver",
+  "title": "cmpt756-g15-serverful-ml-app",
+  "uid": "cdi6cihgd3vnkb",
+  "version": 7,
+  "weekStart": ""
+}
