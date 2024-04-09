@@ -108,7 +108,7 @@
           },
           "disableTextWrap": false,
           "editorMode": "builder",
-          "expr": "rate(flask_http_request_duration_seconds_sum{status=\"200\", method=\"POST\"}[30s]) / rate(flask_http_request_duration_seconds_count{status=\"200\"}[30s])",
+          "expr": "(rate(flask_http_request_duration_seconds_sum{status=\"200\", method=\"POST\"}[30s]) * 1000) / rate(flask_http_request_duration_seconds_count{status=\"200\"}[30s])",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
           "instant": false,
@@ -118,7 +118,7 @@
           "useBackend": false
         }
       ],
-      "title": "Average response time [30s]",
+      "title": "Average response time [30s] ms",
       "type": "timeseries"
     },
     {
@@ -496,8 +496,4 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "cmpt756-g15-serverful-ml-app",
-  "uid": "cdi6cihgd3vnkb",
-  "version": 2,
-  "weekStart": ""
-}
+ 
