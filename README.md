@@ -1,14 +1,18 @@
-## Example on how to use Prometheus and Grafana to monitor a Flask API application
+## Containerized or Serverless Machine Learning
 
-Example deployment of a Flask API using Prometheus and Grafana for metrics and monitoring. All tied together using docker-compose.
+Monitoring and measuring the performance of an ML application deployed on both serverful and serverless architectures.
 
-### Install dependencies
+The serverful Flask ML Application was deployed on a GCP VM Instance using Prometheus and Grafana for metrics and monitoring. All tied together using docker-compose.
+
+The serverless version can be deployed on Google Cloud Functions & monitored using built-in dashboard.
+
+### Install dependencies (serverful)
 
 ```
 pip install -r api/requirements.txt
 ```
 
-### Set up and run everything using docker-compose
+### Set up and deploy app using docker-compose (serverful)
 
 ```
 docker-compose up
@@ -16,6 +20,6 @@ docker-compose up
 
 ### Access
 
-* API: http://localhost:8080/flask-prometheus-grafana-example/
-* Prometheus: http://localhost:9090/
+* API: http://localhost:8080
+* Prometheus: http://localhost:9090
 * Grafana: http://localhost:3000 `[username: admin, password: pass@123]`
