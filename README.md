@@ -1,6 +1,6 @@
 ## Containerized or Serverless Machine Learning
 
-Monitoring and measuring the performance of an ML application deployed on both serverful and serverless architectures.
+### Implementation & deployment architecture
 
 The serverful Flask ML Application was deployed on a GCP VM Instance using Prometheus and Grafana for metrics and monitoring. All tied together using docker-compose.
 
